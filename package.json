@@ -1,0 +1,55 @@
+{
+  "name": "mern-simplesetup",
+  "version": "1.0.0",
+  "description": "skeleton",
+  "main": "template.js",
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crist16/projects_mern.git"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Cristobal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crist16/projects_mern/issues"
+  },
+  "homepage": "https://github.com/crist16/projects_mern#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.3.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+    "@babel/plugin-proposal-function-sent": "^7.5.0",
+    "@babel/plugin-proposal-json-strings": "^7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.19.1",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
